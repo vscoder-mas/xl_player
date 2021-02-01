@@ -3,6 +3,7 @@
 //
 //#include "jni.h"
 #include <string.h>
+#include <stdint.h>
 #include "OrientationEKF.h"
 
 static OrientationEKF ekf;

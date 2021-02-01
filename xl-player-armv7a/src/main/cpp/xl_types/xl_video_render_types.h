@@ -13,6 +13,7 @@
 #include <libavutil/frame.h>
 #include <EGL/egl.h>
 #include <stdbool.h>
+#include <pthread.h>
 #include "xl_macro.h"
 
 typedef enum {

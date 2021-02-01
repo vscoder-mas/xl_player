@@ -3,6 +3,7 @@ package com.cls.xl.xl;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -35,6 +36,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 String mediaUrl = ((EditText) findViewById(R.id.url_edit)).getText().toString().trim();
+                mediaUrl = String.format("%s/wuwenxidong.mp4", Environment.getExternalStorageDirectory());
                 if (mediaUrl.isEmpty()) {
                     Toast.makeText(MainActivity.this, "请输入正确的地址", Toast.LENGTH_SHORT).show();
                 } else {
