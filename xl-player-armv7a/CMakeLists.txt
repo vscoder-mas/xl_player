@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.4.1)
 
-set(lib_src_DIR ${CMAKE_SOURCE_DIR}/ff_libs/${ANDROID_ABI})
-include_directories(${CMAKE_SOURCE_DIR}/../jni_include)
+set(lib_src_DIR ${CMAKE_SOURCE_DIR}/src/main/jniLibs/${ANDROID_ABI})
+include_directories(${CMAKE_SOURCE_DIR}/src/main/cpp/include)
 
 MESSAGE(STATUS "XL_PLayer : ANDROID_ABI  ${ANDROID_ABI}")
 
